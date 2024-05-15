@@ -32,6 +32,23 @@ function filtrar() {
     .catch(err => console.error('Error al filtrar trámites: ', err));
 }
 
+//Filtrar2
+//const $value = document.getElementById("buscar-input").value
+//$table.innerHTML = ''
+//fetch(apiUrl+`4001/tramites/${$value}`).then(res =>{
+//    return res.json()
+//}).then(data => {
+//    data.forEach(e => {
+//        $table.innerHTML += `<tr>
+//        <td>${e.titular}</td>
+//        <td>${e.dni}</td>
+//        <td>${e.tipo}</td>
+//        <td>${e.prioritario}</td>
+//        <td>${e.observaciones}</td>
+//        </tr>
+//        `  })
+//})
+
 function cargarGrilla(data) {
     const listaTramites = document.getElementById("lista-tramites");
     listaTramites.innerHTML = '';
