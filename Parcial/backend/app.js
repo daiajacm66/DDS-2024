@@ -41,7 +41,7 @@ async function inicializarBaseDeDatos() {
 }
 
 // Endpoint para buscar según el criterio indicado por enunciado.
-app.get('/tramites/:criterio', async (req, res) => {
+app.get('/tramites/:tipo', async (req, res) => {
     const tipoBuscado = req.params.tipo;
     try{
         const tiposEncontrados = await Tramite.findAll({
